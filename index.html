@@ -219,6 +219,17 @@
           <ul class="space-y-3 list-disc list-inside">
             <li class="text-blue-900">
               <span class="inline-block bg-red-600 text-white text-xs font-bold px-2 py-0.5 rounded mr-2">NEW!</span>
+              <span class="font-semibold">Final MOS Results & Winners Announced!</span>
+              <span class="text-xs text-blue-700 ml-2">(May 13, 2026)</span>
+              <div class="text-sm text-blue-800 leading-relaxed mt-1 ml-5">
+                The final MOS results are now available, including MOS_all and MOS_expert, with track-specific
+                placements for winners.
+                See the <a href="#final-mos-results" class="underline hover:text-blue-600 font-medium">Final MOS
+                  Results</a>
+                section for details.
+              </div>
+            </li>
+            <li class="text-blue-900">
               <span class="font-semibold">Final Evaluation Results Released!</span>
               <span class="text-xs text-blue-700 ml-2">(Apr 29, 2026)</span>
               <div class="text-sm text-blue-800 leading-relaxed mt-1 ml-5">
@@ -346,6 +357,143 @@
           </ul>
         </div>
       </div>
+    </section>
+
+    <!-- ===== Final MOS Results ===== -->
+    <section id="final-mos-results" class="space-y-6">
+      <header class="space-y-2">
+        <h2 class="text-4xl font-semibold">Final MOS Results</h2>
+        <p class="text-sm text-gray-600">De-identified results of the final MOS evaluation phase.</p>
+
+        <div class="text-sm text-gray-600 space-y-2 leading-relaxed">
+          <ul class="list-disc pl-6 space-y-1">
+            <li>We collected responses from 35 participants across five distinct questionnaires.</li>
+            <li>Participants rated each sample on Audio Fidelity, Musicality, Prompt Adherence, and Overall; MOS uses
+              only the Overall score.</li>
+            <li>MOS_all aggregates all participants (35), while MOS_expert aggregates expert listeners only (20). Both
+              scores yield consistent rankings.</li>
+            <li>Expert listeners are participants who have more than three years of music training or work in a
+              music-related profession, or who rate their music appreciation level above 3.</li>
+            <li>Because p00 consistently underperformed across both tracks, <strong>we awarded one winner in
+                the Performance
+                Track and the top three in the Efficiency Track.</strong></li>
+          </ul>
+        </div>
+      </header>
+
+      <div class="flex items-center gap-3 mb-3">
+        <span class="text-sm font-medium text-gray-600">Sort by:</span>
+        <button id="mos-sort-id-btn" onclick="sortMosResults('id')"
+          class="px-3 py-1.5 text-sm font-medium rounded-lg border transition-colors bg-blue-600 text-white border-blue-600">
+          Submission ID
+        </button>
+        <button id="mos-sort-within-btn" onclick="sortMosResults('within')"
+          class="px-3 py-1.5 text-sm font-medium rounded-lg border transition-colors text-gray-700 border-gray-300 hover:bg-gray-50">
+          Ranking (within track)
+        </button>
+        <button id="mos-sort-across-btn" onclick="sortMosResults('across')"
+          class="px-3 py-1.5 text-sm font-medium rounded-lg border transition-colors text-gray-700 border-gray-300 hover:bg-gray-50">
+          Ranking (across track)
+        </button>
+      </div>
+
+      <div class="rounded-xl border p-4 sm:p-5 overflow-x-auto">
+        <table class="min-w-full text-sm">
+          <thead>
+            <tr class="border-b bg-gray-50">
+              <th scope="col" class="text-left px-4 py-3 font-semibold text-gray-700">Submission ID</th>
+              <th scope="col" class="text-left px-4 py-3 font-semibold text-gray-700">MOS_all</th>
+              <th scope="col" class="text-left px-4 py-3 font-semibold text-gray-700">MOS_expert</th>
+              <th scope="col" class="text-left px-4 py-3 font-semibold text-gray-700">Placement (track)</th>
+            </tr>
+          </thead>
+          <tbody id="mos-results-tbody" class="divide-y">
+            <tr data-sid="1_e" data-track="e" data-rank-within="2" data-rank-across="3">
+              <td class="px-4 py-3 font-medium">e01</td>
+              <td class="px-4 py-3">3.225</td>
+              <td class="px-4 py-3">3.177</td>
+              <td class="px-4 py-3">Efficiency 2nd</td>
+            </tr>
+            <tr data-sid="5_e" data-track="e" data-rank-within="4" data-rank-across="5">
+              <td class="px-4 py-3 font-medium">e05</td>
+              <td class="px-4 py-3">2.969</td>
+              <td class="px-4 py-3">2.929</td>
+              <td class="px-4 py-3">—</td>
+            </tr>
+            <tr data-sid="7_e" data-track="e" data-rank-within="1" data-rank-across="2">
+              <td class="px-4 py-3 font-medium">e07</td>
+              <td class="px-4 py-3">3.250</td>
+              <td class="px-4 py-3">3.186</td>
+              <td class="px-4 py-3">Efficiency 1st</td>
+            </tr>
+            <tr data-sid="8_e" data-track="e" data-rank-within="3" data-rank-across="4">
+              <td class="px-4 py-3 font-medium">e08</td>
+              <td class="px-4 py-3">3.119</td>
+              <td class="px-4 py-3">3.044</td>
+              <td class="px-4 py-3">Efficiency 3rd</td>
+            </tr>
+            <tr data-sid="0_p" data-track="p" data-rank-within="2" data-rank-across="6">
+              <td class="px-4 py-3 font-medium">p00</td>
+              <td class="px-4 py-3">2.006</td>
+              <td class="px-4 py-3">2.044</td>
+              <td class="px-4 py-3">—</td>
+            </tr>
+            <tr data-sid="5_p" data-track="p" data-rank-within="1" data-rank-across="1">
+              <td class="px-4 py-3 font-medium">p05</td>
+              <td class="px-4 py-3">3.344</td>
+              <td class="px-4 py-3">3.327</td>
+              <td class="px-4 py-3">Performance 1st</td>
+            </tr>
+            <tr data-sid="musicgen_small" data-track="b" data-rank-within="999" data-rank-across="999">
+              <td class="px-4 py-3 font-medium">musicgen-small</td>
+              <td class="px-4 py-3">3.538</td>
+              <td class="px-4 py-3">3.425</td>
+              <td class="px-4 py-3">—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <script>
+        function sortMosResults(mode) {
+          const tbody = document.getElementById('mos-results-tbody');
+          const rows = Array.from(tbody.querySelectorAll('tr'));
+          const idBtn = document.getElementById('mos-sort-id-btn');
+          const withinBtn = document.getElementById('mos-sort-within-btn');
+          const acrossBtn = document.getElementById('mos-sort-across-btn');
+          const activeClass = 'px-3 py-1.5 text-sm font-medium rounded-lg border transition-colors bg-blue-600 text-white border-blue-600';
+          const inactiveClass = 'px-3 py-1.5 text-sm font-medium rounded-lg border transition-colors text-gray-700 border-gray-300 hover:bg-gray-50';
+
+          idBtn.className = inactiveClass;
+          withinBtn.className = inactiveClass;
+          acrossBtn.className = inactiveClass;
+
+          if (mode === 'id') {
+            rows.sort((a, b) => {
+              const trackOrder = { e: 0, p: 1, b: 2 };
+              const aTrack = trackOrder[a.dataset.track] ?? 3;
+              const bTrack = trackOrder[b.dataset.track] ?? 3;
+              if (aTrack !== bTrack) return aTrack - bTrack;
+              return a.dataset.sid.localeCompare(b.dataset.sid, undefined, { numeric: true });
+            });
+            idBtn.className = activeClass;
+          } else if (mode === 'within') {
+            const eRows = rows.filter(r => r.dataset.track === 'e');
+            const pRows = rows.filter(r => r.dataset.track === 'p');
+            const bRows = rows.filter(r => r.dataset.track === 'b');
+            eRows.sort((a, b) => parseInt(a.dataset.rankWithin) - parseInt(b.dataset.rankWithin));
+            pRows.sort((a, b) => parseInt(a.dataset.rankWithin) - parseInt(b.dataset.rankWithin));
+            eRows.concat(pRows).concat(bRows).forEach(row => tbody.appendChild(row));
+            withinBtn.className = activeClass;
+            return;
+          } else if (mode === 'across') {
+            rows.sort((a, b) => parseInt(a.dataset.rankAcross) - parseInt(b.dataset.rankAcross));
+            acrossBtn.className = activeClass;
+          }
+
+          rows.forEach(row => tbody.appendChild(row));
+        }
+      </script>
     </section>
 
     <!-- ===== Final Evaluation Results ===== -->

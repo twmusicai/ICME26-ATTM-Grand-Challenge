@@ -153,6 +153,8 @@
     <div class="max-w-6xl mx-auto px-4 py-3">
       <div class="flex items-center justify-center gap-6">
         <div class="flex items-center gap-6 text-sm font-medium whitespace-nowrap">
+          <a href="#accepted-papers" class="hover:text-blue-600">Accepted Papers</a>
+          <a href="#results" class="hover:text-blue-600">Results</a>
           <div class="nav-dropdown">
             <a href="#overview" class="hover:text-blue-600">Overview</a>
             <div class="dropdown-content">
@@ -162,7 +164,6 @@
               <a href="#evaluation">Evaluation Criteria</a>
             </div>
           </div>
-          <a href="#final-results" class="hover:text-blue-600">Results</a>
           <a href="#participate" class="hover:text-blue-600">Participate</a>
           <a href="#dataset" class="hover:text-blue-600">Dataset & Code</a>
           <a href="#dates" class="hover:text-blue-600">Dates</a>
@@ -187,6 +188,8 @@
   <div id="mobile-menu" class="mobile-menu sm:hidden fixed top-0 left-0 right-0 z-40 border-t bg-white shadow-lg">
     <nav class="max-w-6xl mx-auto px-6 py-4">
       <div class="flex flex-col gap-4 text-sm font-medium text-center">
+        <a href="#accepted-papers" class="hover:text-blue-600 py-2">Accepted Papers</a>
+        <a href="#results" class="hover:text-blue-600 py-2">Results</a>
         <div class="mobile-dropdown">
           <button class="mobile-dropdown-toggle w-full hover:text-blue-600 py-2">
             Overview <span class="dropdown-arrow">▼</span>
@@ -199,7 +202,6 @@
             <a href="#evaluation" class="block hover:text-blue-600 py-2">Evaluation Criteria</a>
           </div>
         </div>
-        <a href="#final-results" class="hover:text-blue-600 py-2">Results</a>
         <a href="#participate" class="hover:text-blue-600 py-2">Participate</a>
         <a href="#dataset" class="hover:text-blue-600 py-2">Dataset & Code</a>
         <a href="#dates" class="hover:text-blue-600 py-2">Dates</a>
@@ -219,6 +221,16 @@
           <ul class="space-y-3 list-disc list-inside">
             <li class="text-blue-900">
               <span class="inline-block bg-red-600 text-white text-xs font-bold px-2 py-0.5 rounded mr-2">NEW!</span>
+              <span class="font-semibold">Accepted Grand Challenge Papers Now Available!</span>
+              <span class="text-xs text-blue-700 ml-2">(Jun 11, 2026)</span>
+              <div class="text-sm text-blue-800 leading-relaxed mt-1 ml-5">
+                Camera-ready papers from all accepted grand challenge teams are now publicly available for download.
+                See the <a href="#accepted-papers" class="underline hover:text-blue-600 font-medium">Accepted Grand
+                  Challenge Papers</a>
+                section for details.
+              </div>
+            </li>
+            <li class="text-blue-900">
               <span class="font-semibold">Final MOS Results & Winners Announced!</span>
               <span class="text-xs text-blue-700 ml-2">(May 13, 2026)</span>
               <div class="text-sm text-blue-800 leading-relaxed mt-1 ml-5">
@@ -359,547 +371,767 @@
       </div>
     </section>
 
-    <!-- ===== Winners ===== -->
-    <section id="mos-winners" class="space-y-6">
+    <!-- ===== Accepted Grand Challenge Papers ===== -->
+    <section id="accepted-papers" class="space-y-6">
       <header class="space-y-2">
-        <h2 class="text-4xl font-semibold">Winners of the Grand Challenge</h2>
-        <p class="text-sm text-gray-600">Awarded based on final MOS results.</p>
-        <p class="text-sm text-gray-700">Cash awards: 1st place in the Efficiency Track wins $1,000 USD, and 2nd and
-          3rd place win $500 USD each. The Performance Track winner wins $1,000 USD.</p>
+        <h2 class="text-4xl font-semibold">Accepted Grand Challenge Papers</h2>
+        <p class="text-sm text-gray-600">Camera-ready papers accepted to the ICME 2026 ATTM Grand Challenge.</p>
       </header>
 
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="rounded-xl border p-5 space-y-4">
-          <h3 class="text-lg font-semibold text-blue-600">Efficiency Track</h3>
-          <div class="flex items-end justify-center gap-4">
-            <div class="flex flex-col items-center">
-              <div class="text-xs font-semibold text-gray-500">2nd</div>
-              <div class="w-20 h-20 bg-blue-100 border border-blue-200 rounded-t-lg flex items-center justify-center">
-                <span class="font-semibold text-blue-800">e01</span>
+      <!-- Official Summary Paper -->
+      <div class="space-y-3">
+        <h3 class="text-base font-semibold text-gray-700 uppercase tracking-wide">Official Grand Challenge Summary Paper
+        </h3>
+        <div class="rounded-xl border p-4 flex items-start justify-between gap-4 hover:bg-gray-50 transition-colors">
+          <p class="text-sm font-medium text-gray-800 leading-snug">Academic Text-to-Music Grand Challenge: Datasets,
+            Baselines, and Evaluation Methods</p>
+          <a href="assets/camera_ready_papers/220.pdf" target="_blank" rel="noopener"
+            class="shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg border border-gray-300 text-gray-700 hover:bg-gray-100 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+            PDF
+          </a>
+        </div>
+      </div>
+
+      <!-- Efficiency Track Winners -->
+      <div class="space-y-3">
+        <h3 class="text-base font-semibold text-gray-700 uppercase tracking-wide">🏆 Efficiency Track Winners</h3>
+        <div class="space-y-2">
+
+          <div class="rounded-xl border p-4 flex items-start justify-between gap-4 hover:bg-gray-50 transition-colors">
+            <div class="space-y-1 min-w-0">
+              <div class="flex flex-wrap items-center gap-1.5">
+                <span
+                  class="inline-block text-xs font-semibold px-2 py-0.5 rounded border border-gray-400 text-gray-600">1st</span>
+                <span class="inline-block text-xs font-mono px-2 py-0.5 rounded bg-gray-100 text-gray-600">e07</span>
+              </div>
+              <p class="text-sm font-medium text-gray-800 leading-snug">S2Accompanist: A Semantic-Aware and
+                Structure-Guided Diffusion Model for Music Accompaniment Generation</p>
+            </div>
+            <a href="assets/camera_ready_papers/07.pdf" target="_blank" rel="noopener"
+              class="shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg border border-gray-300 text-gray-700 hover:bg-gray-100 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+              PDF
+            </a>
+          </div>
+
+          <div class="rounded-xl border p-4 flex items-start justify-between gap-4 hover:bg-gray-50 transition-colors">
+            <div class="space-y-1 min-w-0">
+              <div class="flex flex-wrap items-center gap-1.5">
+                <span
+                  class="inline-block text-xs font-semibold px-2 py-0.5 rounded border border-gray-400 text-gray-600">2nd</span>
+                <span class="inline-block text-xs font-mono px-2 py-0.5 rounded bg-gray-100 text-gray-600">e01</span>
+              </div>
+              <p class="text-sm font-medium text-gray-800 leading-snug">Efficient Text-to-Music Generation via Flow
+                Matching with Bidirectional Mamba SSM</p>
+            </div>
+            <a href="assets/camera_ready_papers/01.pdf" target="_blank" rel="noopener"
+              class="shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg border border-gray-300 text-gray-700 hover:bg-gray-100 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+              PDF
+            </a>
+          </div>
+
+          <div class="rounded-xl border p-4 flex items-start justify-between gap-4 hover:bg-gray-50 transition-colors">
+            <div class="space-y-1 min-w-0">
+              <div class="flex flex-wrap items-center gap-1.5">
+                <span
+                  class="inline-block text-xs font-semibold px-2 py-0.5 rounded border border-gray-400 text-gray-600">3rd</span>
+                <span class="inline-block text-xs font-mono px-2 py-0.5 rounded bg-gray-100 text-gray-600">e08</span>
+              </div>
+              <p class="text-sm font-medium text-gray-800 leading-snug">Making the Most of Limited Data: Score-Aware
+                Training for Text-to-Music Generation</p>
+            </div>
+            <a href="assets/camera_ready_papers/08.pdf" target="_blank" rel="noopener"
+              class="shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg border border-gray-300 text-gray-700 hover:bg-gray-100 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+              PDF
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Performance Track Winner -->
+      <div class="space-y-3">
+        <h3 class="text-base font-semibold text-gray-700 uppercase tracking-wide">🏆 Performance Track Winner</h3>
+        <div class="rounded-xl border p-4 flex items-start justify-between gap-4 hover:bg-gray-50 transition-colors">
+          <div class="space-y-1 min-w-0">
+            <div class="flex flex-wrap items-center gap-1.5">
+              <span
+                class="inline-block text-xs font-semibold px-2 py-0.5 rounded border border-gray-400 text-gray-600">1st</span>
+              <span class="inline-block text-xs font-mono px-2 py-0.5 rounded bg-gray-100 text-gray-600">e05</span>
+              <span class="inline-block text-xs font-mono px-2 py-0.5 rounded bg-gray-100 text-gray-600">p05</span>
+            </div>
+            <p class="text-sm font-medium text-gray-800 leading-snug">Instrumental Text-to-Music Generation with
+              Auxiliary Conditioning Branches</p>
+          </div>
+          <a href="assets/camera_ready_papers/05.pdf" target="_blank" rel="noopener"
+            class="shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg border border-gray-300 text-gray-700 hover:bg-gray-100 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+            PDF
+          </a>
+        </div>
+      </div>
+
+      <!-- Other Accepted Papers -->
+      <div class="space-y-3">
+        <h3 class="text-base font-semibold text-gray-700 uppercase tracking-wide">Other Accepted Papers</h3>
+        <div class="space-y-2">
+
+          <div class="rounded-xl border p-4 flex items-start justify-between gap-4 hover:bg-gray-50 transition-colors">
+            <div class="space-y-1 min-w-0">
+              <div class="flex flex-wrap items-center gap-1.5">
+                <span class="inline-block text-xs font-mono px-2 py-0.5 rounded bg-gray-100 text-gray-600">e00</span>
+                <span class="inline-block text-xs font-mono px-2 py-0.5 rounded bg-gray-100 text-gray-600">p00</span>
+              </div>
+              <p class="text-sm font-medium text-gray-800 leading-snug">MeanAudio-S with DACO: Efficient Text-to-Music
+                Generation via Rectified Flow and Distribution-Aware Posterior Refinement</p>
+            </div>
+            <a href="assets/camera_ready_papers/00.pdf" target="_blank" rel="noopener"
+              class="shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg border border-gray-300 text-gray-700 hover:bg-gray-100 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+              PDF
+            </a>
+          </div>
+
+          <div class="rounded-xl border p-4 flex items-start justify-between gap-4 hover:bg-gray-50 transition-colors">
+            <div class="space-y-1 min-w-0">
+              <div class="flex flex-wrap items-center gap-1.5">
+                <span class="inline-block text-xs font-mono px-2 py-0.5 rounded bg-gray-100 text-gray-600">e02</span>
+              </div>
+              <p class="text-sm font-medium text-gray-800 leading-snug">Improving Text-to-Music Generation with Human
+                Preference Rewards</p>
+            </div>
+            <a href="assets/camera_ready_papers/02.pdf" target="_blank" rel="noopener"
+              class="shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg border border-gray-300 text-gray-700 hover:bg-gray-100 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+              PDF
+            </a>
+          </div>
+
+          <div class="rounded-xl border p-4 flex items-start justify-between gap-4 hover:bg-gray-50 transition-colors">
+            <div class="space-y-1 min-w-0">
+              <div class="flex flex-wrap items-center gap-1.5">
+                <span class="inline-block text-xs font-mono px-2 py-0.5 rounded bg-gray-100 text-gray-600">e09</span>
+                <span class="inline-block text-xs font-mono px-2 py-0.5 rounded bg-gray-100 text-gray-600">p09</span>
+              </div>
+              <p class="text-sm font-medium text-gray-800 leading-snug">UT-AISTimprt submission for ICME 2026 Grand
+                Challenge on Academic Text-to-Music Generation</p>
+            </div>
+            <a href="assets/camera_ready_papers/09.pdf" target="_blank" rel="noopener"
+              class="shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg border border-gray-300 text-gray-700 hover:bg-gray-100 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+              PDF
+            </a>
+          </div>
+
+          <div class="rounded-xl border p-4 flex items-start justify-between gap-4 hover:bg-gray-50 transition-colors">
+            <div class="space-y-1 min-w-0">
+              <div class="flex flex-wrap items-center gap-1.5">
+                <span class="inline-block text-xs font-mono px-2 py-0.5 rounded bg-gray-100 text-gray-600">e10</span>
+                <span class="inline-block text-xs font-mono px-2 py-0.5 rounded bg-gray-100 text-gray-600">p10</span>
+              </div>
+              <p class="text-sm font-medium text-gray-800 leading-snug">Modeling Music as a Time-Frequency Image: A 2D
+                Tokenizer for Music Generation</p>
+            </div>
+            <a href="assets/camera_ready_papers/10.pdf" target="_blank" rel="noopener"
+              class="shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg border border-gray-300 text-gray-700 hover:bg-gray-100 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+              PDF
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Results (unified) ===== -->
+    <section id="results" class="space-y-6">
+      <header class="space-y-2">
+        <h2 class="text-4xl font-semibold">Results</h2>
+      </header>
+
+      <!-- ===== Winners ===== -->
+      <section id="mos-winners" class="space-y-6">
+        <header class="space-y-2">
+          <h2 class="text-2xl font-semibold">Winners of the Grand Challenge</h2>
+          <p class="text-sm text-gray-600">Awarded based on final MOS results.</p>
+          <p class="text-sm text-gray-700">Cash awards: 1st place in the Efficiency Track wins $1,000 USD, and 2nd and
+            3rd place win $500 USD each. The Performance Track winner wins $1,000 USD.</p>
+        </header>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="rounded-xl border p-5 space-y-4">
+            <h3 class="text-lg font-semibold text-blue-600">Efficiency Track</h3>
+            <div class="flex items-end justify-center gap-4">
+              <div class="flex flex-col items-center">
+                <div class="text-xs font-semibold text-gray-500">2nd</div>
+                <div class="w-20 h-20 bg-blue-100 border border-blue-200 rounded-t-lg flex items-center justify-center">
+                  <span class="font-semibold text-blue-800">e01</span>
+                </div>
+              </div>
+              <div class="flex flex-col items-center">
+                <div class="text-xs font-semibold text-gray-500">1st</div>
+                <div class="w-20 h-28 bg-blue-200 border border-blue-300 rounded-t-lg flex items-center justify-center">
+                  <span class="font-semibold text-blue-900">e07</span>
+                </div>
+              </div>
+              <div class="flex flex-col items-center">
+                <div class="text-xs font-semibold text-gray-500">3rd</div>
+                <div class="w-20 h-16 bg-blue-50 border border-blue-100 rounded-t-lg flex items-center justify-center">
+                  <span class="font-semibold text-blue-700">e08</span>
+                </div>
               </div>
             </div>
-            <div class="flex flex-col items-center">
-              <div class="text-xs font-semibold text-gray-500">1st</div>
-              <div class="w-20 h-28 bg-blue-200 border border-blue-300 rounded-t-lg flex items-center justify-center">
-                <span class="font-semibold text-blue-900">e07</span>
-              </div>
-            </div>
-            <div class="flex flex-col items-center">
-              <div class="text-xs font-semibold text-gray-500">3rd</div>
-              <div class="w-20 h-16 bg-blue-50 border border-blue-100 rounded-t-lg flex items-center justify-center">
-                <span class="font-semibold text-blue-700">e08</span>
+          </div>
+
+          <div class="rounded-xl border p-5 space-y-4">
+            <h3 class="text-lg font-semibold text-purple-600">Performance Track</h3>
+            <div class="flex items-end justify-center">
+              <div class="flex flex-col items-center">
+                <div class="text-xs font-semibold text-gray-500">1st</div>
+                <div
+                  class="w-24 h-28 bg-purple-200 border border-purple-300 rounded-t-lg flex items-center justify-center">
+                  <span class="font-semibold text-purple-900">p05</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="rounded-xl border p-5 space-y-4">
-          <h3 class="text-lg font-semibold text-purple-600">Performance Track</h3>
-          <div class="flex items-end justify-center">
-            <div class="flex flex-col items-center">
-              <div class="text-xs font-semibold text-gray-500">1st</div>
-              <div
-                class="w-24 h-28 bg-purple-200 border border-purple-300 rounded-t-lg flex items-center justify-center">
-                <span class="font-semibold text-purple-900">p05</span>
-              </div>
-            </div>
+      <!-- ===== Final MOS Results ===== -->
+      <section id="final-mos-results" class="space-y-6">
+        <header class="space-y-2">
+          <h2 class="text-2xl font-semibold">Final MOS Results</h2>
+          <p class="text-sm text-gray-600">De-identified results of the final MOS evaluation phase.</p>
+
+          <div class="text-sm text-gray-600 space-y-2 leading-relaxed">
+            <ul class="list-disc pl-6 space-y-1">
+              <li>We collected responses from 35 participants across five distinct questionnaires.</li>
+              <li>Participants rated each sample on Audio Fidelity, Musicality, Prompt Adherence, and Overall; MOS uses
+                only the Overall score.</li>
+              <li>MOS_all aggregates all participants (35), while MOS_expert aggregates expert listeners only (20). Both
+                scores yield consistent rankings.</li>
+              <li>Expert listeners are participants who have more than three years of music training or work in a
+                music-related profession, or who rate their music appreciation level above 3.</li>
+              <li>Given the consistent underperformance of p00 across both tracks, <strong>we decided to award the top
+                  three winners in the Efficiency Track and only one winner in the
+                  Performance Track.</strong></li>
+            </ul>
           </div>
+        </header>
+
+        <div class="flex items-center gap-3 mb-3">
+          <span class="text-sm font-medium text-gray-600">Sort by:</span>
+          <button id="mos-sort-id-btn" onclick="sortMosResults('id')"
+            class="px-3 py-1.5 text-sm font-medium rounded-lg border transition-colors bg-blue-600 text-white border-blue-600">
+            Submission ID
+          </button>
+          <button id="mos-sort-within-btn" onclick="sortMosResults('within')"
+            class="px-3 py-1.5 text-sm font-medium rounded-lg border transition-colors text-gray-700 border-gray-300 hover:bg-gray-50">
+            Ranking (within track)
+          </button>
+          <button id="mos-sort-across-btn" onclick="sortMosResults('across')"
+            class="px-3 py-1.5 text-sm font-medium rounded-lg border transition-colors text-gray-700 border-gray-300 hover:bg-gray-50">
+            Ranking (across track)
+          </button>
         </div>
-      </div>
-    </section>
 
-    <!-- ===== Final MOS Results ===== -->
-    <section id="final-mos-results" class="space-y-6">
-      <header class="space-y-2">
-        <h2 class="text-4xl font-semibold">Final MOS Results</h2>
-        <p class="text-sm text-gray-600">De-identified results of the final MOS evaluation phase.</p>
-
-        <div class="text-sm text-gray-600 space-y-2 leading-relaxed">
-          <ul class="list-disc pl-6 space-y-1">
-            <li>We collected responses from 35 participants across five distinct questionnaires.</li>
-            <li>Participants rated each sample on Audio Fidelity, Musicality, Prompt Adherence, and Overall; MOS uses
-              only the Overall score.</li>
-            <li>MOS_all aggregates all participants (35), while MOS_expert aggregates expert listeners only (20). Both
-              scores yield consistent rankings.</li>
-            <li>Expert listeners are participants who have more than three years of music training or work in a
-              music-related profession, or who rate their music appreciation level above 3.</li>
-            <li>Given the consistent underperformance of p00 across both tracks, <strong>we decided to award the top
-                three winners in the Efficiency Track and only one winner in the
-                Performance Track.</strong></li>
-          </ul>
+        <div class="rounded-xl border p-4 sm:p-5 overflow-x-auto">
+          <table class="min-w-full text-sm">
+            <thead>
+              <tr class="border-b bg-gray-50">
+                <th scope="col" class="text-left px-4 py-3 font-semibold text-gray-700">Submission ID</th>
+                <th scope="col" class="text-left px-4 py-3 font-semibold text-gray-700">MOS_all</th>
+                <th scope="col" class="text-left px-4 py-3 font-semibold text-gray-700">MOS_expert</th>
+                <th scope="col" class="text-left px-4 py-3 font-semibold text-gray-700">Placement (track)</th>
+              </tr>
+            </thead>
+            <tbody id="mos-results-tbody" class="divide-y">
+              <tr data-sid="1_e" data-track="e" data-rank-within="2" data-rank-across="3">
+                <td class="px-4 py-3 font-medium">e01</td>
+                <td class="px-4 py-3">3.225</td>
+                <td class="px-4 py-3">3.177</td>
+                <td class="px-4 py-3">Efficiency 2nd</td>
+              </tr>
+              <tr data-sid="5_e" data-track="e" data-rank-within="4" data-rank-across="5">
+                <td class="px-4 py-3 font-medium">e05</td>
+                <td class="px-4 py-3">2.969</td>
+                <td class="px-4 py-3">2.929</td>
+                <td class="px-4 py-3">—</td>
+              </tr>
+              <tr data-sid="7_e" data-track="e" data-rank-within="1" data-rank-across="2">
+                <td class="px-4 py-3 font-medium">e07</td>
+                <td class="px-4 py-3">3.250</td>
+                <td class="px-4 py-3">3.186</td>
+                <td class="px-4 py-3">Efficiency 1st</td>
+              </tr>
+              <tr data-sid="8_e" data-track="e" data-rank-within="3" data-rank-across="4">
+                <td class="px-4 py-3 font-medium">e08</td>
+                <td class="px-4 py-3">3.119</td>
+                <td class="px-4 py-3">3.044</td>
+                <td class="px-4 py-3">Efficiency 3rd</td>
+              </tr>
+              <tr data-sid="0_p" data-track="p" data-rank-within="2" data-rank-across="6">
+                <td class="px-4 py-3 font-medium">p00</td>
+                <td class="px-4 py-3">2.006</td>
+                <td class="px-4 py-3">2.044</td>
+                <td class="px-4 py-3">—</td>
+              </tr>
+              <tr data-sid="5_p" data-track="p" data-rank-within="1" data-rank-across="1">
+                <td class="px-4 py-3 font-medium">p05</td>
+                <td class="px-4 py-3">3.344</td>
+                <td class="px-4 py-3">3.327</td>
+                <td class="px-4 py-3">Performance 1st</td>
+              </tr>
+              <tr data-sid="musicgen_small" data-track="b" data-rank-within="999" data-rank-across="999">
+                <td class="px-4 py-3 font-medium">musicgen-small</td>
+                <td class="px-4 py-3">3.538</td>
+                <td class="px-4 py-3">3.425</td>
+                <td class="px-4 py-3">—</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-      </header>
 
-      <div class="flex items-center gap-3 mb-3">
-        <span class="text-sm font-medium text-gray-600">Sort by:</span>
-        <button id="mos-sort-id-btn" onclick="sortMosResults('id')"
-          class="px-3 py-1.5 text-sm font-medium rounded-lg border transition-colors bg-blue-600 text-white border-blue-600">
-          Submission ID
-        </button>
-        <button id="mos-sort-within-btn" onclick="sortMosResults('within')"
-          class="px-3 py-1.5 text-sm font-medium rounded-lg border transition-colors text-gray-700 border-gray-300 hover:bg-gray-50">
-          Ranking (within track)
-        </button>
-        <button id="mos-sort-across-btn" onclick="sortMosResults('across')"
-          class="px-3 py-1.5 text-sm font-medium rounded-lg border transition-colors text-gray-700 border-gray-300 hover:bg-gray-50">
-          Ranking (across track)
-        </button>
-      </div>
+        <script>
+          function sortMosResults(mode) {
+            const tbody = document.getElementById('mos-results-tbody');
+            const rows = Array.from(tbody.querySelectorAll('tr'));
+            const idBtn = document.getElementById('mos-sort-id-btn');
+            const withinBtn = document.getElementById('mos-sort-within-btn');
+            const acrossBtn = document.getElementById('mos-sort-across-btn');
+            const activeClass = 'px-3 py-1.5 text-sm font-medium rounded-lg border transition-colors bg-blue-600 text-white border-blue-600';
+            const inactiveClass = 'px-3 py-1.5 text-sm font-medium rounded-lg border transition-colors text-gray-700 border-gray-300 hover:bg-gray-50';
 
-      <div class="rounded-xl border p-4 sm:p-5 overflow-x-auto">
-        <table class="min-w-full text-sm">
-          <thead>
-            <tr class="border-b bg-gray-50">
-              <th scope="col" class="text-left px-4 py-3 font-semibold text-gray-700">Submission ID</th>
-              <th scope="col" class="text-left px-4 py-3 font-semibold text-gray-700">MOS_all</th>
-              <th scope="col" class="text-left px-4 py-3 font-semibold text-gray-700">MOS_expert</th>
-              <th scope="col" class="text-left px-4 py-3 font-semibold text-gray-700">Placement (track)</th>
-            </tr>
-          </thead>
-          <tbody id="mos-results-tbody" class="divide-y">
-            <tr data-sid="1_e" data-track="e" data-rank-within="2" data-rank-across="3">
-              <td class="px-4 py-3 font-medium">e01</td>
-              <td class="px-4 py-3">3.225</td>
-              <td class="px-4 py-3">3.177</td>
-              <td class="px-4 py-3">Efficiency 2nd</td>
-            </tr>
-            <tr data-sid="5_e" data-track="e" data-rank-within="4" data-rank-across="5">
-              <td class="px-4 py-3 font-medium">e05</td>
-              <td class="px-4 py-3">2.969</td>
-              <td class="px-4 py-3">2.929</td>
-              <td class="px-4 py-3">—</td>
-            </tr>
-            <tr data-sid="7_e" data-track="e" data-rank-within="1" data-rank-across="2">
-              <td class="px-4 py-3 font-medium">e07</td>
-              <td class="px-4 py-3">3.250</td>
-              <td class="px-4 py-3">3.186</td>
-              <td class="px-4 py-3">Efficiency 1st</td>
-            </tr>
-            <tr data-sid="8_e" data-track="e" data-rank-within="3" data-rank-across="4">
-              <td class="px-4 py-3 font-medium">e08</td>
-              <td class="px-4 py-3">3.119</td>
-              <td class="px-4 py-3">3.044</td>
-              <td class="px-4 py-3">Efficiency 3rd</td>
-            </tr>
-            <tr data-sid="0_p" data-track="p" data-rank-within="2" data-rank-across="6">
-              <td class="px-4 py-3 font-medium">p00</td>
-              <td class="px-4 py-3">2.006</td>
-              <td class="px-4 py-3">2.044</td>
-              <td class="px-4 py-3">—</td>
-            </tr>
-            <tr data-sid="5_p" data-track="p" data-rank-within="1" data-rank-across="1">
-              <td class="px-4 py-3 font-medium">p05</td>
-              <td class="px-4 py-3">3.344</td>
-              <td class="px-4 py-3">3.327</td>
-              <td class="px-4 py-3">Performance 1st</td>
-            </tr>
-            <tr data-sid="musicgen_small" data-track="b" data-rank-within="999" data-rank-across="999">
-              <td class="px-4 py-3 font-medium">musicgen-small</td>
-              <td class="px-4 py-3">3.538</td>
-              <td class="px-4 py-3">3.425</td>
-              <td class="px-4 py-3">—</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+            idBtn.className = inactiveClass;
+            withinBtn.className = inactiveClass;
+            acrossBtn.className = inactiveClass;
 
-      <script>
-        function sortMosResults(mode) {
-          const tbody = document.getElementById('mos-results-tbody');
-          const rows = Array.from(tbody.querySelectorAll('tr'));
-          const idBtn = document.getElementById('mos-sort-id-btn');
-          const withinBtn = document.getElementById('mos-sort-within-btn');
-          const acrossBtn = document.getElementById('mos-sort-across-btn');
-          const activeClass = 'px-3 py-1.5 text-sm font-medium rounded-lg border transition-colors bg-blue-600 text-white border-blue-600';
-          const inactiveClass = 'px-3 py-1.5 text-sm font-medium rounded-lg border transition-colors text-gray-700 border-gray-300 hover:bg-gray-50';
+            if (mode === 'id') {
+              rows.sort((a, b) => {
+                const trackOrder = { e: 0, p: 1, b: 2 };
+                const aTrack = trackOrder[a.dataset.track] ?? 3;
+                const bTrack = trackOrder[b.dataset.track] ?? 3;
+                if (aTrack !== bTrack) return aTrack - bTrack;
+                return a.dataset.sid.localeCompare(b.dataset.sid, undefined, { numeric: true });
+              });
+              idBtn.className = activeClass;
+            } else if (mode === 'within') {
+              const eRows = rows.filter(r => r.dataset.track === 'e');
+              const pRows = rows.filter(r => r.dataset.track === 'p');
+              const bRows = rows.filter(r => r.dataset.track === 'b');
+              eRows.sort((a, b) => parseInt(a.dataset.rankWithin) - parseInt(b.dataset.rankWithin));
+              pRows.sort((a, b) => parseInt(a.dataset.rankWithin) - parseInt(b.dataset.rankWithin));
+              eRows.concat(pRows).concat(bRows).forEach(row => tbody.appendChild(row));
+              withinBtn.className = activeClass;
+              return;
+            } else if (mode === 'across') {
+              rows.sort((a, b) => parseInt(a.dataset.rankAcross) - parseInt(b.dataset.rankAcross));
+              acrossBtn.className = activeClass;
+            }
 
-          idBtn.className = inactiveClass;
-          withinBtn.className = inactiveClass;
-          acrossBtn.className = inactiveClass;
-
-          if (mode === 'id') {
-            rows.sort((a, b) => {
-              const trackOrder = { e: 0, p: 1, b: 2 };
-              const aTrack = trackOrder[a.dataset.track] ?? 3;
-              const bTrack = trackOrder[b.dataset.track] ?? 3;
-              if (aTrack !== bTrack) return aTrack - bTrack;
-              return a.dataset.sid.localeCompare(b.dataset.sid, undefined, { numeric: true });
-            });
-            idBtn.className = activeClass;
-          } else if (mode === 'within') {
-            const eRows = rows.filter(r => r.dataset.track === 'e');
-            const pRows = rows.filter(r => r.dataset.track === 'p');
-            const bRows = rows.filter(r => r.dataset.track === 'b');
-            eRows.sort((a, b) => parseInt(a.dataset.rankWithin) - parseInt(b.dataset.rankWithin));
-            pRows.sort((a, b) => parseInt(a.dataset.rankWithin) - parseInt(b.dataset.rankWithin));
-            eRows.concat(pRows).concat(bRows).forEach(row => tbody.appendChild(row));
-            withinBtn.className = activeClass;
-            return;
-          } else if (mode === 'across') {
-            rows.sort((a, b) => parseInt(a.dataset.rankAcross) - parseInt(b.dataset.rankAcross));
-            acrossBtn.className = activeClass;
+            rows.forEach(row => tbody.appendChild(row));
           }
+        </script>
+      </section>
 
-          rows.forEach(row => tbody.appendChild(row));
-        }
-      </script>
-    </section>
+      <!-- ===== Final Evaluation Results ===== -->
+      <section id="final-results" class="space-y-6">
+        <header class="space-y-2">
+          <h2 class="text-2xl font-semibold">Final Evaluation Results</h2>
+          <p class="text-sm text-gray-600">De-identified results of the final evaluation phase.</p>
 
-    <!-- ===== Final Evaluation Results ===== -->
-    <section id="final-results" class="space-y-6">
-      <header class="space-y-2">
-        <h2 class="text-4xl font-semibold">Final Evaluation Results</h2>
-        <p class="text-sm text-gray-600">De-identified results of the final evaluation phase.</p>
+          <div class="text-sm text-gray-600 space-y-2 leading-relaxed">
+            <ul class="list-disc pl-6 space-y-1">
+              <li>Both FAD and CLAP are computed with the CLAP-Laion-Music checkpoint <code
+                  class="px-1.5 py-0.5 bg-gray-100 rounded text-xs font-mono">music_audioset_epoch_15_esc_90.14.pt</code>.
+                The reference set used for FAD is a hidden instrumental subset from Jamendo.</li>
+              <li>CCS (Concept Coverage Score) measures how well generated audio covers the musical concepts specified
+                in
+                each prompt, evaluated using a Large Audio Language Model (LALM).</li>
+              <li>Final Ranking is determined by a Borda count aggregation across FAD, CLAP, and CCS scores.</li>
+              <li>Submission IDs starting with <code
+                  class="px-1.5 py-0.5 bg-gray-100 rounded text-xs font-mono">e</code>
+                are from the Efficiency Track; those starting with <code
+                  class="px-1.5 py-0.5 bg-gray-100 rounded text-xs font-mono">p</code> are from the Performance Track.
+              </li>
+            </ul>
+          </div>
+        </header>
 
-        <div class="text-sm text-gray-600 space-y-2 leading-relaxed">
-          <ul class="list-disc pl-6 space-y-1">
-            <li>Both FAD and CLAP are computed with the CLAP-Laion-Music checkpoint <code
-                class="px-1.5 py-0.5 bg-gray-100 rounded text-xs font-mono">music_audioset_epoch_15_esc_90.14.pt</code>.
-              The reference set used for FAD is a hidden instrumental subset from Jamendo.</li>
-            <li>CCS (Concept Coverage Score) measures how well generated audio covers the musical concepts specified in
-              each prompt, evaluated using a Large Audio Language Model (LALM).</li>
-            <li>Final Ranking is determined by a Borda count aggregation across FAD, CLAP, and CCS scores.</li>
-            <li>Submission IDs starting with <code class="px-1.5 py-0.5 bg-gray-100 rounded text-xs font-mono">e</code>
-              are from the Efficiency Track; those starting with <code
-                class="px-1.5 py-0.5 bg-gray-100 rounded text-xs font-mono">p</code> are from the Performance Track.
-            </li>
-          </ul>
+        <div class="flex items-center gap-3 mb-3">
+          <span class="text-sm font-medium text-gray-600">Sort by:</span>
+          <button id="sort-id-btn" onclick="sortFinalResults('id')"
+            class="px-3 py-1.5 text-sm font-medium rounded-lg border transition-colors bg-blue-600 text-white border-blue-600">
+            Submission ID
+          </button>
+          <button id="sort-within-btn" onclick="sortFinalResults('within')"
+            class="px-3 py-1.5 text-sm font-medium rounded-lg border transition-colors text-gray-700 border-gray-300 hover:bg-gray-50">
+            Ranking (within track)
+          </button>
+          <button id="sort-across-btn" onclick="sortFinalResults('across')"
+            class="px-3 py-1.5 text-sm font-medium rounded-lg border transition-colors text-gray-700 border-gray-300 hover:bg-gray-50">
+            Ranking (across track)
+          </button>
         </div>
-      </header>
 
-      <div class="flex items-center gap-3 mb-3">
-        <span class="text-sm font-medium text-gray-600">Sort by:</span>
-        <button id="sort-id-btn" onclick="sortFinalResults('id')"
-          class="px-3 py-1.5 text-sm font-medium rounded-lg border transition-colors bg-blue-600 text-white border-blue-600">
-          Submission ID
-        </button>
-        <button id="sort-within-btn" onclick="sortFinalResults('within')"
-          class="px-3 py-1.5 text-sm font-medium rounded-lg border transition-colors text-gray-700 border-gray-300 hover:bg-gray-50">
-          Ranking (within track)
-        </button>
-        <button id="sort-across-btn" onclick="sortFinalResults('across')"
-          class="px-3 py-1.5 text-sm font-medium rounded-lg border transition-colors text-gray-700 border-gray-300 hover:bg-gray-50">
-          Ranking (across track)
-        </button>
-      </div>
+        <div class="rounded-xl border p-4 sm:p-5 overflow-x-auto">
+          <table class="min-w-full text-sm">
+            <thead>
+              <tr class="border-b bg-gray-50">
+                <th scope="col" class="text-left px-4 py-3 font-semibold text-gray-700">Submission ID</th>
+                <th scope="col" class="text-left px-4 py-3 font-semibold text-gray-700">FAD↓</th>
+                <th scope="col" class="text-left px-4 py-3 font-semibold text-gray-700">CLAP↑</th>
+                <th scope="col" class="text-left px-4 py-3 font-semibold text-gray-700">CCS↑</th>
+                <th scope="col" class="text-left px-4 py-3 font-semibold text-gray-700">Ranking<br>(within track)</th>
+                <th scope="col" class="text-left px-4 py-3 font-semibold text-gray-700">Ranking<br>(across track)</th>
+                <th scope="col" class="text-left px-4 py-3 font-semibold text-gray-700">Finalists</th>
+              </tr>
+            </thead>
+            <tbody id="final-results-tbody" class="divide-y">
+              <tr data-sid="0_e" data-rank-within="5" data-rank-across="6">
+                <td class="px-4 py-3 font-medium">e00</td>
+                <td class="px-4 py-3">0.556</td>
+                <td class="px-4 py-3">0.310</td>
+                <td class="px-4 py-3">0.796</td>
+                <td class="px-4 py-3">5</td>
+                <td class="px-4 py-3">6</td>
+                <td class="px-4 py-3"></td>
+              </tr>
+              <tr data-sid="1_e" data-rank-within="2" data-rank-across="2">
+                <td class="px-4 py-3 font-medium">e01</td>
+                <td class="px-4 py-3">0.577</td>
+                <td class="px-4 py-3">0.338</td>
+                <td class="px-4 py-3">0.863</td>
+                <td class="px-4 py-3">2</td>
+                <td class="px-4 py-3">2</td>
+                <td class="px-4 py-3">✓</td>
+              </tr>
+              <tr data-sid="2_e" data-rank-within="6" data-rank-across="8">
+                <td class="px-4 py-3 font-medium">e02</td>
+                <td class="px-4 py-3">0.498</td>
+                <td class="px-4 py-3">0.270</td>
+                <td class="px-4 py-3">0.763</td>
+                <td class="px-4 py-3">6</td>
+                <td class="px-4 py-3">8</td>
+                <td class="px-4 py-3"></td>
+              </tr>
+              <tr data-sid="3_e" data-rank-within="10" data-rank-across="12">
+                <td class="px-4 py-3 font-medium">e03</td>
+                <td class="px-4 py-3">0.518</td>
+                <td class="px-4 py-3">0.251</td>
+                <td class="px-4 py-3">0.763</td>
+                <td class="px-4 py-3">10</td>
+                <td class="px-4 py-3">12</td>
+                <td class="px-4 py-3"></td>
+              </tr>
+              <tr data-sid="4_e" data-rank-within="7" data-rank-across="9">
+                <td class="px-4 py-3 font-medium">e04</td>
+                <td class="px-4 py-3">0.574</td>
+                <td class="px-4 py-3">0.195</td>
+                <td class="px-4 py-3">0.833</td>
+                <td class="px-4 py-3">7</td>
+                <td class="px-4 py-3">9</td>
+                <td class="px-4 py-3"></td>
+              </tr>
+              <tr data-sid="5_e" data-rank-within="2" data-rank-across="2">
+                <td class="px-4 py-3 font-medium">e05</td>
+                <td class="px-4 py-3">0.487</td>
+                <td class="px-4 py-3">0.305</td>
+                <td class="px-4 py-3">0.800</td>
+                <td class="px-4 py-3">2</td>
+                <td class="px-4 py-3">2</td>
+                <td class="px-4 py-3">✓</td>
+              </tr>
+              <tr data-sid="6_e" data-rank-within="7" data-rank-across="9">
+                <td class="px-4 py-3 font-medium">e06</td>
+                <td class="px-4 py-3">0.667</td>
+                <td class="px-4 py-3">0.268</td>
+                <td class="px-4 py-3">0.808</td>
+                <td class="px-4 py-3">7</td>
+                <td class="px-4 py-3">9</td>
+                <td class="px-4 py-3"></td>
+              </tr>
+              <tr data-sid="7_e" data-rank-within="1" data-rank-across="1">
+                <td class="px-4 py-3 font-medium">e07</td>
+                <td class="px-4 py-3">0.417</td>
+                <td class="px-4 py-3">0.261</td>
+                <td class="px-4 py-3">0.867</td>
+                <td class="px-4 py-3">1</td>
+                <td class="px-4 py-3">1</td>
+                <td class="px-4 py-3">✓</td>
+              </tr>
+              <tr data-sid="8_e" data-rank-within="4" data-rank-across="2">
+                <td class="px-4 py-3 font-medium">e08</td>
+                <td class="px-4 py-3">0.495</td>
+                <td class="px-4 py-3">0.295</td>
+                <td class="px-4 py-3">0.804</td>
+                <td class="px-4 py-3">4</td>
+                <td class="px-4 py-3">2</td>
+                <td class="px-4 py-3">✓</td>
+              </tr>
+              <tr data-sid="9_e" data-rank-within="10" data-rank-across="12">
+                <td class="px-4 py-3 font-medium">e09</td>
+                <td class="px-4 py-3">0.646</td>
+                <td class="px-4 py-3">0.263</td>
+                <td class="px-4 py-3">0.767</td>
+                <td class="px-4 py-3">10</td>
+                <td class="px-4 py-3">12</td>
+                <td class="px-4 py-3"></td>
+              </tr>
+              <tr data-sid="10_e" data-rank-within="9" data-rank-across="11">
+                <td class="px-4 py-3 font-medium">e10</td>
+                <td class="px-4 py-3">0.482</td>
+                <td class="px-4 py-3">0.163</td>
+                <td class="px-4 py-3">0.738</td>
+                <td class="px-4 py-3">9</td>
+                <td class="px-4 py-3">11</td>
+                <td class="px-4 py-3"></td>
+              </tr>
+              <tr data-sid="11_e" data-rank-within="12" data-rank-across="16">
+                <td class="px-4 py-3 font-medium">e11</td>
+                <td class="px-4 py-3">0.892</td>
+                <td class="px-4 py-3">0.097</td>
+                <td class="px-4 py-3">0.675</td>
+                <td class="px-4 py-3">12</td>
+                <td class="px-4 py-3">16</td>
+                <td class="px-4 py-3"></td>
+              </tr>
+              <tr data-sid="0_p" data-rank-within="2" data-rank-across="6">
+                <td class="px-4 py-3 font-medium">p00</td>
+                <td class="px-4 py-3">0.557</td>
+                <td class="px-4 py-3">0.311</td>
+                <td class="px-4 py-3">0.796</td>
+                <td class="px-4 py-3">2</td>
+                <td class="px-4 py-3">6</td>
+                <td class="px-4 py-3">✓</td>
+              </tr>
+              <tr data-sid="5_p" data-rank-within="1" data-rank-across="5">
+                <td class="px-4 py-3 font-medium">p05</td>
+                <td class="px-4 py-3">0.514</td>
+                <td class="px-4 py-3">0.306</td>
+                <td class="px-4 py-3">0.800</td>
+                <td class="px-4 py-3">1</td>
+                <td class="px-4 py-3">5</td>
+                <td class="px-4 py-3">✓</td>
+              </tr>
+              <tr data-sid="9_p" data-rank-within="4" data-rank-across="15">
+                <td class="px-4 py-3 font-medium">p09</td>
+                <td class="px-4 py-3">0.646</td>
+                <td class="px-4 py-3">0.260</td>
+                <td class="px-4 py-3">0.767</td>
+                <td class="px-4 py-3">4</td>
+                <td class="px-4 py-3">15</td>
+                <td class="px-4 py-3"></td>
+              </tr>
+              <tr data-sid="10_p" data-rank-within="3" data-rank-across="14">
+                <td class="px-4 py-3 font-medium">p10</td>
+                <td class="px-4 py-3">0.500</td>
+                <td class="px-4 py-3">0.171</td>
+                <td class="px-4 py-3">0.721</td>
+                <td class="px-4 py-3">3</td>
+                <td class="px-4 py-3">14</td>
+                <td class="px-4 py-3"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-      <div class="rounded-xl border p-4 sm:p-5 overflow-x-auto">
-        <table class="min-w-full text-sm">
-          <thead>
-            <tr class="border-b bg-gray-50">
-              <th scope="col" class="text-left px-4 py-3 font-semibold text-gray-700">Submission ID</th>
-              <th scope="col" class="text-left px-4 py-3 font-semibold text-gray-700">FAD↓</th>
-              <th scope="col" class="text-left px-4 py-3 font-semibold text-gray-700">CLAP↑</th>
-              <th scope="col" class="text-left px-4 py-3 font-semibold text-gray-700">CCS↑</th>
-              <th scope="col" class="text-left px-4 py-3 font-semibold text-gray-700">Ranking<br>(within track)</th>
-              <th scope="col" class="text-left px-4 py-3 font-semibold text-gray-700">Ranking<br>(across track)</th>
-              <th scope="col" class="text-left px-4 py-3 font-semibold text-gray-700">Finalists</th>
-            </tr>
-          </thead>
-          <tbody id="final-results-tbody" class="divide-y">
-            <tr data-sid="0_e" data-rank-within="5" data-rank-across="6">
-              <td class="px-4 py-3 font-medium">e00</td>
-              <td class="px-4 py-3">0.556</td>
-              <td class="px-4 py-3">0.310</td>
-              <td class="px-4 py-3">0.796</td>
-              <td class="px-4 py-3">5</td>
-              <td class="px-4 py-3">6</td>
-              <td class="px-4 py-3"></td>
-            </tr>
-            <tr data-sid="1_e" data-rank-within="2" data-rank-across="2">
-              <td class="px-4 py-3 font-medium">e01</td>
-              <td class="px-4 py-3">0.577</td>
-              <td class="px-4 py-3">0.338</td>
-              <td class="px-4 py-3">0.863</td>
-              <td class="px-4 py-3">2</td>
-              <td class="px-4 py-3">2</td>
-              <td class="px-4 py-3">✓</td>
-            </tr>
-            <tr data-sid="2_e" data-rank-within="6" data-rank-across="8">
-              <td class="px-4 py-3 font-medium">e02</td>
-              <td class="px-4 py-3">0.498</td>
-              <td class="px-4 py-3">0.270</td>
-              <td class="px-4 py-3">0.763</td>
-              <td class="px-4 py-3">6</td>
-              <td class="px-4 py-3">8</td>
-              <td class="px-4 py-3"></td>
-            </tr>
-            <tr data-sid="3_e" data-rank-within="10" data-rank-across="12">
-              <td class="px-4 py-3 font-medium">e03</td>
-              <td class="px-4 py-3">0.518</td>
-              <td class="px-4 py-3">0.251</td>
-              <td class="px-4 py-3">0.763</td>
-              <td class="px-4 py-3">10</td>
-              <td class="px-4 py-3">12</td>
-              <td class="px-4 py-3"></td>
-            </tr>
-            <tr data-sid="4_e" data-rank-within="7" data-rank-across="9">
-              <td class="px-4 py-3 font-medium">e04</td>
-              <td class="px-4 py-3">0.574</td>
-              <td class="px-4 py-3">0.195</td>
-              <td class="px-4 py-3">0.833</td>
-              <td class="px-4 py-3">7</td>
-              <td class="px-4 py-3">9</td>
-              <td class="px-4 py-3"></td>
-            </tr>
-            <tr data-sid="5_e" data-rank-within="2" data-rank-across="2">
-              <td class="px-4 py-3 font-medium">e05</td>
-              <td class="px-4 py-3">0.487</td>
-              <td class="px-4 py-3">0.305</td>
-              <td class="px-4 py-3">0.800</td>
-              <td class="px-4 py-3">2</td>
-              <td class="px-4 py-3">2</td>
-              <td class="px-4 py-3">✓</td>
-            </tr>
-            <tr data-sid="6_e" data-rank-within="7" data-rank-across="9">
-              <td class="px-4 py-3 font-medium">e06</td>
-              <td class="px-4 py-3">0.667</td>
-              <td class="px-4 py-3">0.268</td>
-              <td class="px-4 py-3">0.808</td>
-              <td class="px-4 py-3">7</td>
-              <td class="px-4 py-3">9</td>
-              <td class="px-4 py-3"></td>
-            </tr>
-            <tr data-sid="7_e" data-rank-within="1" data-rank-across="1">
-              <td class="px-4 py-3 font-medium">e07</td>
-              <td class="px-4 py-3">0.417</td>
-              <td class="px-4 py-3">0.261</td>
-              <td class="px-4 py-3">0.867</td>
-              <td class="px-4 py-3">1</td>
-              <td class="px-4 py-3">1</td>
-              <td class="px-4 py-3">✓</td>
-            </tr>
-            <tr data-sid="8_e" data-rank-within="4" data-rank-across="2">
-              <td class="px-4 py-3 font-medium">e08</td>
-              <td class="px-4 py-3">0.495</td>
-              <td class="px-4 py-3">0.295</td>
-              <td class="px-4 py-3">0.804</td>
-              <td class="px-4 py-3">4</td>
-              <td class="px-4 py-3">2</td>
-              <td class="px-4 py-3">✓</td>
-            </tr>
-            <tr data-sid="9_e" data-rank-within="10" data-rank-across="12">
-              <td class="px-4 py-3 font-medium">e09</td>
-              <td class="px-4 py-3">0.646</td>
-              <td class="px-4 py-3">0.263</td>
-              <td class="px-4 py-3">0.767</td>
-              <td class="px-4 py-3">10</td>
-              <td class="px-4 py-3">12</td>
-              <td class="px-4 py-3"></td>
-            </tr>
-            <tr data-sid="10_e" data-rank-within="9" data-rank-across="11">
-              <td class="px-4 py-3 font-medium">e10</td>
-              <td class="px-4 py-3">0.482</td>
-              <td class="px-4 py-3">0.163</td>
-              <td class="px-4 py-3">0.738</td>
-              <td class="px-4 py-3">9</td>
-              <td class="px-4 py-3">11</td>
-              <td class="px-4 py-3"></td>
-            </tr>
-            <tr data-sid="11_e" data-rank-within="12" data-rank-across="16">
-              <td class="px-4 py-3 font-medium">e11</td>
-              <td class="px-4 py-3">0.892</td>
-              <td class="px-4 py-3">0.097</td>
-              <td class="px-4 py-3">0.675</td>
-              <td class="px-4 py-3">12</td>
-              <td class="px-4 py-3">16</td>
-              <td class="px-4 py-3"></td>
-            </tr>
-            <tr data-sid="0_p" data-rank-within="2" data-rank-across="6">
-              <td class="px-4 py-3 font-medium">p00</td>
-              <td class="px-4 py-3">0.557</td>
-              <td class="px-4 py-3">0.311</td>
-              <td class="px-4 py-3">0.796</td>
-              <td class="px-4 py-3">2</td>
-              <td class="px-4 py-3">6</td>
-              <td class="px-4 py-3">✓</td>
-            </tr>
-            <tr data-sid="5_p" data-rank-within="1" data-rank-across="5">
-              <td class="px-4 py-3 font-medium">p05</td>
-              <td class="px-4 py-3">0.514</td>
-              <td class="px-4 py-3">0.306</td>
-              <td class="px-4 py-3">0.800</td>
-              <td class="px-4 py-3">1</td>
-              <td class="px-4 py-3">5</td>
-              <td class="px-4 py-3">✓</td>
-            </tr>
-            <tr data-sid="9_p" data-rank-within="4" data-rank-across="15">
-              <td class="px-4 py-3 font-medium">p09</td>
-              <td class="px-4 py-3">0.646</td>
-              <td class="px-4 py-3">0.260</td>
-              <td class="px-4 py-3">0.767</td>
-              <td class="px-4 py-3">4</td>
-              <td class="px-4 py-3">15</td>
-              <td class="px-4 py-3"></td>
-            </tr>
-            <tr data-sid="10_p" data-rank-within="3" data-rank-across="14">
-              <td class="px-4 py-3 font-medium">p10</td>
-              <td class="px-4 py-3">0.500</td>
-              <td class="px-4 py-3">0.171</td>
-              <td class="px-4 py-3">0.721</td>
-              <td class="px-4 py-3">3</td>
-              <td class="px-4 py-3">14</td>
-              <td class="px-4 py-3"></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+        <script>
+          function sortFinalResults(mode) {
+            const tbody = document.getElementById('final-results-tbody');
+            const rows = Array.from(tbody.querySelectorAll('tr'));
+            const idBtn = document.getElementById('sort-id-btn');
+            const withinBtn = document.getElementById('sort-within-btn');
+            const acrossBtn = document.getElementById('sort-across-btn');
+            const activeClass = 'px-3 py-1.5 text-sm font-medium rounded-lg border transition-colors bg-blue-600 text-white border-blue-600';
+            const inactiveClass = 'px-3 py-1.5 text-sm font-medium rounded-lg border transition-colors text-gray-700 border-gray-300 hover:bg-gray-50';
 
-      <script>
-        function sortFinalResults(mode) {
-          const tbody = document.getElementById('final-results-tbody');
-          const rows = Array.from(tbody.querySelectorAll('tr'));
-          const idBtn = document.getElementById('sort-id-btn');
-          const withinBtn = document.getElementById('sort-within-btn');
-          const acrossBtn = document.getElementById('sort-across-btn');
-          const activeClass = 'px-3 py-1.5 text-sm font-medium rounded-lg border transition-colors bg-blue-600 text-white border-blue-600';
-          const inactiveClass = 'px-3 py-1.5 text-sm font-medium rounded-lg border transition-colors text-gray-700 border-gray-300 hover:bg-gray-50';
+            // Reset all buttons
+            idBtn.className = inactiveClass;
+            withinBtn.className = inactiveClass;
+            acrossBtn.className = inactiveClass;
 
-          // Reset all buttons
-          idBtn.className = inactiveClass;
-          withinBtn.className = inactiveClass;
-          acrossBtn.className = inactiveClass;
+            if (mode === 'id') {
+              rows.sort((a, b) => {
+                const aSuffix = a.dataset.sid.split('_')[1];
+                const bSuffix = b.dataset.sid.split('_')[1];
+                if (aSuffix !== bSuffix) return aSuffix === 'e' ? -1 : 1;
+                return parseInt(a.dataset.sid) - parseInt(b.dataset.sid);
+              });
+              idBtn.className = activeClass;
+            } else if (mode === 'within') {
+              // Sort efficiency and performance rows separately by within-track rank
+              const eRows = rows.filter(r => r.dataset.sid.endsWith('_e'));
+              const pRows = rows.filter(r => r.dataset.sid.endsWith('_p'));
+              eRows.sort((a, b) => {
+                const diff = parseInt(a.dataset.rankWithin) - parseInt(b.dataset.rankWithin);
+                if (diff !== 0) return diff;
+                return parseInt(a.dataset.sid) - parseInt(b.dataset.sid);
+              });
+              pRows.sort((a, b) => {
+                const diff = parseInt(a.dataset.rankWithin) - parseInt(b.dataset.rankWithin);
+                if (diff !== 0) return diff;
+                return parseInt(a.dataset.sid) - parseInt(b.dataset.sid);
+              });
+              eRows.concat(pRows).forEach(row => tbody.appendChild(row));
+              withinBtn.className = activeClass;
+              return;
+            } else if (mode === 'across') {
+              rows.sort((a, b) => {
+                const diff = parseInt(a.dataset.rankAcross) - parseInt(b.dataset.rankAcross);
+                if (diff !== 0) return diff;
+                return parseInt(a.dataset.sid) - parseInt(b.dataset.sid);
+              });
+              acrossBtn.className = activeClass;
+            }
 
-          if (mode === 'id') {
-            rows.sort((a, b) => {
-              const aSuffix = a.dataset.sid.split('_')[1];
-              const bSuffix = b.dataset.sid.split('_')[1];
-              if (aSuffix !== bSuffix) return aSuffix === 'e' ? -1 : 1;
-              return parseInt(a.dataset.sid) - parseInt(b.dataset.sid);
-            });
-            idBtn.className = activeClass;
-          } else if (mode === 'within') {
-            // Sort efficiency and performance rows separately by within-track rank
-            const eRows = rows.filter(r => r.dataset.sid.endsWith('_e'));
-            const pRows = rows.filter(r => r.dataset.sid.endsWith('_p'));
-            eRows.sort((a, b) => {
-              const diff = parseInt(a.dataset.rankWithin) - parseInt(b.dataset.rankWithin);
-              if (diff !== 0) return diff;
-              return parseInt(a.dataset.sid) - parseInt(b.dataset.sid);
-            });
-            pRows.sort((a, b) => {
-              const diff = parseInt(a.dataset.rankWithin) - parseInt(b.dataset.rankWithin);
-              if (diff !== 0) return diff;
-              return parseInt(a.dataset.sid) - parseInt(b.dataset.sid);
-            });
-            eRows.concat(pRows).forEach(row => tbody.appendChild(row));
-            withinBtn.className = activeClass;
-            return;
-          } else if (mode === 'across') {
-            rows.sort((a, b) => {
-              const diff = parseInt(a.dataset.rankAcross) - parseInt(b.dataset.rankAcross);
-              if (diff !== 0) return diff;
-              return parseInt(a.dataset.sid) - parseInt(b.dataset.sid);
-            });
-            acrossBtn.className = activeClass;
+            rows.forEach(row => tbody.appendChild(row));
           }
+        </script>
+      </section>
 
-          rows.forEach(row => tbody.appendChild(row));
-        }
-      </script>
-    </section>
+      <!-- ===== Dry-run Results ===== -->
+      <section id="dry-run-results" class="space-y-6">
+        <header class="space-y-2">
+          <h2 class="text-2xl font-semibold">Dry-run Results</h2>
+          <p class="text-sm text-gray-600">De-identified result of the dry-run phase.</p>
 
-    <!-- ===== Dry-run Results ===== -->
-    <section id="dry-run-results" class="space-y-6">
-      <header class="space-y-2">
-        <h2 class="text-4xl font-semibold">Dry-run Results</h2>
-        <p class="text-sm text-gray-600">De-identified result of the dry-run phase.</p>
+          <div class="text-sm text-gray-600 space-y-2 leading-relaxed">
+            <ul class="list-disc pl-6 space-y-1">
+              <li>Both FAD and CLAP are computed with the CLAP-Laion-Music checkpoint <code
+                  class="px-1.5 py-0.5 bg-gray-100 rounded text-xs font-mono">music_audioset_epoch_15_esc_90.14.pt</code>.
+              </li>
+              <li>The reference set used for FAD in the dry-run phase is the Song Describer Dataset. Final evaluation
+                will use a hidden reference set.</li>
+              <li>Concept Coverage Score (CCS) is not presented during the dry-run phase.</li>
+            </ul>
+          </div>
+        </header>
 
-        <div class="text-sm text-gray-600 space-y-2 leading-relaxed">
-          <ul class="list-disc pl-6 space-y-1">
-            <li>Both FAD and CLAP are computed with the CLAP-Laion-Music checkpoint <code
-                class="px-1.5 py-0.5 bg-gray-100 rounded text-xs font-mono">music_audioset_epoch_15_esc_90.14.pt</code>.
-            </li>
-            <li>The reference set used for FAD in the dry-run phase is the Song Describer Dataset. Final evaluation
-              will use a hidden reference set.</li>
-            <li>Concept Coverage Score (CCS) is not presented during the dry-run phase.</li>
-          </ul>
+        <div class="rounded-xl border p-4 sm:p-5 overflow-x-auto">
+          <table class="min-w-full text-sm">
+            <thead>
+              <tr class="border-b bg-gray-50">
+                <th scope="col" class="text-left px-4 py-3 font-semibold text-gray-700">Submission ID</th>
+                <th scope="col" class="text-left px-4 py-3 font-semibold text-gray-700">FAD↓</th>
+                <th scope="col" class="text-left px-4 py-3 font-semibold text-gray-700">CLAP↑</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y">
+              <tr>
+                <td class="px-4 py-3 font-medium">0</td>
+                <td class="px-4 py-3">0.4040</td>
+                <td class="px-4 py-3">0.3231</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-medium">1</td>
+                <td class="px-4 py-3">0.5455</td>
+                <td class="px-4 py-3">0.3244</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-medium">2</td>
+                <td class="px-4 py-3">0.5181</td>
+                <td class="px-4 py-3">0.3100</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-medium">3</td>
+                <td class="px-4 py-3">0.5547</td>
+                <td class="px-4 py-3">0.3176</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-medium">4</td>
+                <td class="px-4 py-3">0.5127</td>
+                <td class="px-4 py-3">0.3092</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-medium">5</td>
+                <td class="px-4 py-3">0.6583</td>
+                <td class="px-4 py-3">0.2742</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-medium">6</td>
+                <td class="px-4 py-3">0.7164</td>
+                <td class="px-4 py-3">0.2119</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-medium">7</td>
+                <td class="px-4 py-3">0.6461</td>
+                <td class="px-4 py-3">0.2642</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-medium">8</td>
+                <td class="px-4 py-3">0.6364</td>
+                <td class="px-4 py-3">0.2598</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-medium">9</td>
+                <td class="px-4 py-3">0.6890</td>
+                <td class="px-4 py-3">0.2200</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-medium">10</td>
+                <td class="px-4 py-3">0.5003</td>
+                <td class="px-4 py-3">0.1950</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-medium">11</td>
+                <td class="px-4 py-3">0.4998</td>
+                <td class="px-4 py-3">0.1866</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-medium">12</td>
+                <td class="px-4 py-3">0.6516</td>
+                <td class="px-4 py-3">0.2807</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-medium">13</td>
+                <td class="px-4 py-3">0.6711</td>
+                <td class="px-4 py-3">0.2827</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-      </header>
-
-      <div class="rounded-xl border p-4 sm:p-5 overflow-x-auto">
-        <table class="min-w-full text-sm">
-          <thead>
-            <tr class="border-b bg-gray-50">
-              <th scope="col" class="text-left px-4 py-3 font-semibold text-gray-700">Submission ID</th>
-              <th scope="col" class="text-left px-4 py-3 font-semibold text-gray-700">FAD↓</th>
-              <th scope="col" class="text-left px-4 py-3 font-semibold text-gray-700">CLAP↑</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y">
-            <tr>
-              <td class="px-4 py-3 font-medium">0</td>
-              <td class="px-4 py-3">0.4040</td>
-              <td class="px-4 py-3">0.3231</td>
-            </tr>
-            <tr>
-              <td class="px-4 py-3 font-medium">1</td>
-              <td class="px-4 py-3">0.5455</td>
-              <td class="px-4 py-3">0.3244</td>
-            </tr>
-            <tr>
-              <td class="px-4 py-3 font-medium">2</td>
-              <td class="px-4 py-3">0.5181</td>
-              <td class="px-4 py-3">0.3100</td>
-            </tr>
-            <tr>
-              <td class="px-4 py-3 font-medium">3</td>
-              <td class="px-4 py-3">0.5547</td>
-              <td class="px-4 py-3">0.3176</td>
-            </tr>
-            <tr>
-              <td class="px-4 py-3 font-medium">4</td>
-              <td class="px-4 py-3">0.5127</td>
-              <td class="px-4 py-3">0.3092</td>
-            </tr>
-            <tr>
-              <td class="px-4 py-3 font-medium">5</td>
-              <td class="px-4 py-3">0.6583</td>
-              <td class="px-4 py-3">0.2742</td>
-            </tr>
-            <tr>
-              <td class="px-4 py-3 font-medium">6</td>
-              <td class="px-4 py-3">0.7164</td>
-              <td class="px-4 py-3">0.2119</td>
-            </tr>
-            <tr>
-              <td class="px-4 py-3 font-medium">7</td>
-              <td class="px-4 py-3">0.6461</td>
-              <td class="px-4 py-3">0.2642</td>
-            </tr>
-            <tr>
-              <td class="px-4 py-3 font-medium">8</td>
-              <td class="px-4 py-3">0.6364</td>
-              <td class="px-4 py-3">0.2598</td>
-            </tr>
-            <tr>
-              <td class="px-4 py-3 font-medium">9</td>
-              <td class="px-4 py-3">0.6890</td>
-              <td class="px-4 py-3">0.2200</td>
-            </tr>
-            <tr>
-              <td class="px-4 py-3 font-medium">10</td>
-              <td class="px-4 py-3">0.5003</td>
-              <td class="px-4 py-3">0.1950</td>
-            </tr>
-            <tr>
-              <td class="px-4 py-3 font-medium">11</td>
-              <td class="px-4 py-3">0.4998</td>
-              <td class="px-4 py-3">0.1866</td>
-            </tr>
-            <tr>
-              <td class="px-4 py-3 font-medium">12</td>
-              <td class="px-4 py-3">0.6516</td>
-              <td class="px-4 py-3">0.2807</td>
-            </tr>
-            <tr>
-              <td class="px-4 py-3 font-medium">13</td>
-              <td class="px-4 py-3">0.6711</td>
-              <td class="px-4 py-3">0.2827</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      </section>
     </section>
 
     <!-- ===== Overview ===== -->

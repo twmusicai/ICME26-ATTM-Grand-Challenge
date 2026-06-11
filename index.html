@@ -153,6 +153,8 @@
     <div class="max-w-6xl mx-auto px-4 py-3">
       <div class="flex items-center justify-center gap-6">
         <div class="flex items-center gap-6 text-sm font-medium whitespace-nowrap">
+          <a href="#accepted-papers" class="hover:text-blue-600">Accepted Papers</a>
+          <a href="#results" class="hover:text-blue-600">Results</a>
           <div class="nav-dropdown">
             <a href="#overview" class="hover:text-blue-600">Overview</a>
             <div class="dropdown-content">
@@ -162,8 +164,6 @@
               <a href="#evaluation">Evaluation Criteria</a>
             </div>
           </div>
-          <a href="#accepted-papers" class="hover:text-blue-600">Accepted Papers</a>
-          <a href="#final-results" class="hover:text-blue-600">Results</a>
           <a href="#participate" class="hover:text-blue-600">Participate</a>
           <a href="#dataset" class="hover:text-blue-600">Dataset & Code</a>
           <a href="#dates" class="hover:text-blue-600">Dates</a>
@@ -188,6 +188,8 @@
   <div id="mobile-menu" class="mobile-menu sm:hidden fixed top-0 left-0 right-0 z-40 border-t bg-white shadow-lg">
     <nav class="max-w-6xl mx-auto px-6 py-4">
       <div class="flex flex-col gap-4 text-sm font-medium text-center">
+        <a href="#accepted-papers" class="hover:text-blue-600 py-2">Accepted Papers</a>
+        <a href="#results" class="hover:text-blue-600 py-2">Results</a>
         <div class="mobile-dropdown">
           <button class="mobile-dropdown-toggle w-full hover:text-blue-600 py-2">
             Overview <span class="dropdown-arrow">▼</span>
@@ -200,8 +202,6 @@
             <a href="#evaluation" class="block hover:text-blue-600 py-2">Evaluation Criteria</a>
           </div>
         </div>
-        <a href="#accepted-papers" class="hover:text-blue-600 py-2">Accepted Papers</a>
-        <a href="#final-results" class="hover:text-blue-600 py-2">Results</a>
         <a href="#participate" class="hover:text-blue-600 py-2">Participate</a>
         <a href="#dataset" class="hover:text-blue-600 py-2">Dataset & Code</a>
         <a href="#dates" class="hover:text-blue-600 py-2">Dates</a>
@@ -549,10 +549,16 @@
       </div>
     </section>
 
-    <!-- ===== Winners ===== -->
-    <section id="mos-winners" class="space-y-6">
+    <!-- ===== Results (unified) ===== -->
+    <section id="results" class="space-y-6">
       <header class="space-y-2">
-        <h2 class="text-4xl font-semibold">Winners of the Grand Challenge</h2>
+        <h2 class="text-4xl font-semibold">Results</h2>
+      </header>
+
+      <!-- ===== Winners ===== -->
+      <section id="mos-winners" class="space-y-6">
+      <header class="space-y-2">
+        <h2 class="text-2xl font-semibold">Winners of the Grand Challenge</h2>
         <p class="text-sm text-gray-600">Awarded based on final MOS results.</p>
         <p class="text-sm text-gray-700">Cash awards: 1st place in the Efficiency Track wins $1,000 USD, and 2nd and
           3rd place win $500 USD each. The Performance Track winner wins $1,000 USD.</p>
@@ -596,12 +602,12 @@
           </div>
         </div>
       </div>
-    </section>
+      </section>
 
-    <!-- ===== Final MOS Results ===== -->
-    <section id="final-mos-results" class="space-y-6">
+      <!-- ===== Final MOS Results ===== -->
+      <section id="final-mos-results" class="space-y-6">
       <header class="space-y-2">
-        <h2 class="text-4xl font-semibold">Final MOS Results</h2>
+        <h2 class="text-2xl font-semibold">Final MOS Results</h2>
         <p class="text-sm text-gray-600">De-identified results of the final MOS evaluation phase.</p>
 
         <div class="text-sm text-gray-600 space-y-2 leading-relaxed">
@@ -733,12 +739,12 @@
           rows.forEach(row => tbody.appendChild(row));
         }
       </script>
-    </section>
+      </section>
 
-    <!-- ===== Final Evaluation Results ===== -->
-    <section id="final-results" class="space-y-6">
+      <!-- ===== Final Evaluation Results ===== -->
+      <section id="final-results" class="space-y-6">
       <header class="space-y-2">
-        <h2 class="text-4xl font-semibold">Final Evaluation Results</h2>
+        <h2 class="text-2xl font-semibold">Final Evaluation Results</h2>
         <p class="text-sm text-gray-600">De-identified results of the final evaluation phase.</p>
 
         <div class="text-sm text-gray-600 space-y-2 leading-relaxed">
@@ -987,12 +993,12 @@
           rows.forEach(row => tbody.appendChild(row));
         }
       </script>
-    </section>
+      </section>
 
-    <!-- ===== Dry-run Results ===== -->
-    <section id="dry-run-results" class="space-y-6">
+      <!-- ===== Dry-run Results ===== -->
+      <section id="dry-run-results" class="space-y-6">
       <header class="space-y-2">
-        <h2 class="text-4xl font-semibold">Dry-run Results</h2>
+        <h2 class="text-2xl font-semibold">Dry-run Results</h2>
         <p class="text-sm text-gray-600">De-identified result of the dry-run phase.</p>
 
         <div class="text-sm text-gray-600 space-y-2 leading-relaxed">
@@ -1090,6 +1096,7 @@
           </tbody>
         </table>
       </div>
+      </section>
     </section>
 
     <!-- ===== Overview ===== -->
